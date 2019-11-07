@@ -28,6 +28,7 @@ namespace _4585_HW_7
             myself.Lock = new TAS_lock();
             var TAS_times = new List<int>();
             Console.WriteLine("Testing TAS lock");
+
             for (int i = 5; i <= max_threads; i += 5)
             {
                 TAS_times.Add(myself.Test_locks(i));
